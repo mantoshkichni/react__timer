@@ -1,0 +1,87 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  
+}
+
+body{
+
+  background-color: rgb(3, 3, 91);
+}
+.timer_div{
+  position: relative;
+  border: 5px solid rgb(116, 111, 111);
+  height: 50vh;
+  width: 60vw;
+  background-color: rgb(2, 2, 69);
+  margin:10% auto;
+  padding: 15px;
+  border-radius: 40px;
+  button{
+    height: 60px;
+    width: 150px;
+    background-color: rgb(10, 97, 10);
+    margin: 10px;
+    color: white;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+  
+  }
+  .reset{
+    background-color:red;
+  }
+  button:disabled
+{
+  color: #666666;
+  opacity: 0.5;
+  cursor: not-allowed! important;
+}
+  .digits{
+    color: white;
+    font-size: 140px;
+    
+  }
+  .mili-sec{
+    color: rgb(155, 7, 7);
+  }
+  .history{
+    .digits{
+      color: rgb(116, 115, 115);
+      font-size: 30px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  
+  .timer_div{
+  
+   height: 70vh;
+   width: 60vw;
+   margin: 25% auto;
+   .digits{
+     color: white;
+     font-size: 60px;
+   }
+   .mili-sec{
+    color: rgb(155, 7, 7);
+  }
+   button{
+     font-size: 15px;
+     height: 30px;
+     border-radius: 7px;
+     width: 70px;
+   }
+   .timer{
+     margin: 50% auto;
+   }
+   .history{
+     .digits{
+       color: rgb(116, 115, 115);
+       font-size: 30px;
+     }
+   }
+  }
+}
